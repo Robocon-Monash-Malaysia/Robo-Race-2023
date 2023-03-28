@@ -88,7 +88,7 @@ void motor(int leftSpeed, int rightSpeed) {
   if (rightSpeed < 0) {
     analogWrite(B_PWM, abs(rightSpeed));
     digitalWrite(B_IN1, HIGH);
-    digitalWrite(B_IN1, LOW);
+    digitalWrite(B_IN2, LOW);
   } else {
     analogWrite(B_PWM, abs(rightSpeed));
     digitalWrite(B_IN1, LOW);
